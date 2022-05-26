@@ -1,13 +1,19 @@
+// Вариант 2 Система Управления доставкой товара.
+// Id - Идентификатор
+//name - название товара
+//courier - курьер
+//dateTime - Дата и время (String);
+//type - тип заказа
 package re;
 
 public class Room {
 	public class Room {
 			private int Id;
-		private int name;
-		private int courier;
-		private int dateTime;
+		private String name;
+		private String courier;
+		private String dateTime;
 		private int type;
-		public Room(int Id, String name, String courier, int dateTime, int type){
+		public Room(int Id, String name, String courier, String dateTime, int type){
 			this.Id=Id;
 			this.name=name;
 			this.courier=courier;
@@ -46,6 +52,6 @@ public class Room {
 			this.type = type;
 		}
 		public String toString(){
-			return "���������-"+Id+"\n"+"�������� ������-"+name+"\n"+"������-"+courier+"\name"+"���� � ����� -"+dateTime+"/5"+"\n"+"��� ������-"+type+"\n";
+			return "Идентификатор-"+Id+"\n"+"Название товара-"+name+"\n"+"курьер-"+courier+"\name"+"Дата и Время-"+dateTime+"/5"+"\n"+"тип товара-"+type+"\n";
 		}
 }
