@@ -52,6 +52,13 @@ public class Calculator {
             case '/':
                 result = num1/num2;
                 break;
+                 case 'sqrt':
+                result = sqrt(a);
+                result = sqrt(b);
+                break;
+            case '^';
+                result = Math.pow(a1, b1);
+                break;
             default:
                 System.out.println("Операция не распознана. Повторите ввод.");
                 result = calc(num1, num2, getOperation());//рекурсия
